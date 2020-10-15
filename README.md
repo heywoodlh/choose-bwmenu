@@ -1,11 +1,17 @@
-# Bitwarden Rofi Menu
+# Bitwarden Choose Menu
 
-This is a work in progress to get the BitWarden cli functionality in an easy Rofi menu.
+This is a work in progress to get the BitWarden cli functionality in an easy Choose menu.
 On selecting an entry, the password is copied to your clipboard for 5 seconds.
 During those 5 seconds, a notification is shown indicating which password you
 are copying at that time.
 
-![bitwarden-rofi](img/screenshot1.png)
+## Prerequisites:
+
+Install `choose-gui`:
+
+```bash
+brew cask install choose-gui
+```
 
 ## Usage
 
@@ -13,7 +19,7 @@ You can either execute the script from a terminal or by binding it to a key
 combination in your window manager.
 
 ```
-bwmenu 0.4
+bwmenu 0.4.1
 
 Usage:
   bwmenu [options] -- [rofi options]
