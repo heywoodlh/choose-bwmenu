@@ -75,7 +75,8 @@ get_session_key() {
 load_items() {
   if ! ITEMS=$(bw list items --session "$BW_HASH" 2>/dev/null)
   then
-    exit_error $? "Could not load items"
+    security delete-generic-password -a $USER -s bw_session bitwarden_choose
+    exit_error $? "Could not load items. Deleting cookie."
   fi
 }
 
