@@ -1,8 +1,8 @@
 # Bitwarden Choose Menu
 
 This is a work in progress to get the Bitwarden cli functionality in an easy Choose menu.
-On selecting an entry, the password is copied to your clipboard for 5 seconds.
-During those 5 seconds, a notification is shown indicating which password you
+On selecting an entry, the password is copied to your clipboard for 15 seconds.
+During those 15 seconds, a notification is shown indicating which password you
 are copying at that time.
 
 ## Prerequisites:
@@ -46,7 +46,7 @@ Options:
 
   -c <SECONDS>, --clear <SECONDS>, --clear=<SECONDS>
       Clear password from clipboard after this many seconds.
-      Defaults: 5 seconds.
+      Defaults: 15 seconds.
 
   -C, --no-clear
       Don't automatically clear the password from the clipboard. This disables

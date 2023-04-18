@@ -2,9 +2,8 @@
 # Choose extension for BitWarden-cli
 NAME="$(basename "$0")"
 VERSION="0.4.1"
-DEFAULT_CLEAR=5
+DEFAULT_CLEAR=15
 BW_HASH=
-
 
 
 # Options
