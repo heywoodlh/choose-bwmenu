@@ -26,7 +26,7 @@ You can either execute the script from a terminal or by binding it to a key
 combination in your window manager.
 
 ```
-bwmenu 0.4.1
+bwmenu 0.4.2
 
 Usage:
   bwmenu [options] -- [rofi options]
@@ -60,3 +60,10 @@ Examples:
   bwmenu
 ```
 
+## Troubleshooting
+
+The `choose-bwmenu` script uses a MacOS keychain to store and retrieve the necessary authentication token to work with `bw`. Delete it with this command if you suspect something is wrong with the keychain:
+
+```
+security delete-keychain bitwarden_choose
+```
